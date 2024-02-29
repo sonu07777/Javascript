@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom part 2</title>
+  </head>
+  <ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+  </ul>
+  <body>
+    <script>
+      //apend child
+      let tittle = document.createElement("h1");
+      tittle.textContent = "sonu,sahoo";
+      tittle.className = "sahoo";
+      tittle.style.fontSize = "25px";
+      console.log(tittle);
+      document.body.appendChild(tittle);
+      //remove child
+      let ul = document.querySelector("ul");
+      console.log(ul);
+      let list = document.querySelectorAll("li");
+      console.log(list);
+    </script>
+  </body>
+</html>

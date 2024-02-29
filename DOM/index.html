@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom part 1</title>
+  </head>
+  <body>
+    <!--id-->
+    <p id="one"><span>Hello!</span> hello</p>
+    <!-- by class -->
+    <div class="sonu">div 1</div>
+    <div class="sonu">div 2</div>
+    <div class="sonu">div 3</div>
+    <!-- by tag -->
+    <script>
+      //id
+      let var1 = document.getElementById("one");
+      console.log(var1);
+      console.log(var1.innerText);
+      console.log(var1.innerHTML);
+      //class
+      let var2 = document.getElementsByClassName("sonu");
+      console.log(var2);
+      console.log(var2[2].innerText);
+      console.log(var2[2].innerHTML);
+      var2[2].innerText="sahoo";
+      console.log(var2[2].innerText)
+      console.log(document.getElementsByClassName("sonu"));
+      //by tag
+    </script>
+  </body>
+</html>

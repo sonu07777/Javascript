@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <p id="js"></p>
+    <button onclick="hey()" id="s">login</button>
+    <script>
+        document.addEventListener("dblclick", hello);
+        //like dblclick there are too many another symbol are there i.e mousenter 
+        function hello(){
+            let a=document.getElementById("js")
+            a.textContent ="sahoo";
+            //a.innerText="sonu";
+        }
+        function hey(){
+            document.getElementById("s").innerText="logout";
+            document.getElementById("s").style.color="yellow"
+            document.getElementById("s").style.background="black"
+            document.getElementById("s").style.padding="16px";
+
+        }
+    </script>
+</body>
+</html>

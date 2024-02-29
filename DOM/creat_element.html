@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creat_element</title>
+</head>
+<body>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <script>
+        let title=document.createElement("h1")
+        title.className="sinu"
+        title.style.fontSize="25px"
+        console.log(title);
+        title.textContent="my creed"
+        console.log(title.innerText)
+        console.log(title)
+        title.style.color="red"
+        document.body.appendChild(title)
+        //for removal of element 
+        let ul=document.querySelector("ul")
+        console.log(ul)
+        let lists=document.querySelectorAll("li")
+        console.log(lists)
+        
+        for( list of lists){
+            ul.removeChild(list)
+        }
+    </script>
+</body>
+</html>
